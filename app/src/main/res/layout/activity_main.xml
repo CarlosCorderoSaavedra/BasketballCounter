@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+
+    <LinearLayout
+        android:background="@color/backgroundApp"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/:linear_layout_scores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dpTeamTextToTop"
+            android:layout_marginLeft="@dimen/dpMarginLeft"
+            android:layout_marginRight="@dimen/dpMarginRight">
+
+            <EditText
+                android:id="@+id/team_a_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:hint="@string/team_a"
+                android:textSize="@dimen/teamNameTextSize"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/score_text"
+                android:textSize="@dimen/teamScoreTextSize"
+                android:textColor="#000000"
+                android:paddingTop="@dimen/dpTeamTextToScore"/>
+
+            <ImageView
+                android:id="@+id/add_three_points_team_a"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addThreeTeamA"
+                android:layout_marginBottom="@dimen/dpButtonBetweenButtons"
+                android:src="@drawable/addthree"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/add_two_points_team_a"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addTwoTeamA"
+                android:layout_marginBottom="@dimen/dpButtonBetweenButtons"
+                android:src="@drawable/addtwo"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/add_one_points_team_a"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addOneTeamA"
+                android:src="@drawable/addone"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dpTeamTextToTop"
+
+            android:layout_marginRight="@dimen/dpMarginRight">
+
+            <EditText
+                android:id="@+id/team_b_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:hint="@string/team_b"
+                android:textSize="@dimen/teamNameTextSize"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/score_text"
+                android:textSize="@dimen/teamScoreTextSize"
+                android:textColor="#000000"
+                android:paddingTop="@dimen/dpTeamTextToScore"/>
+
+            <ImageView
+                android:id="@+id/add_three_points_team_b"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addThreeTeamB"
+                android:layout_marginBottom="@dimen/dpButtonBetweenButtons"
+                android:src="@drawable/addthree"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/add_two_points_team_b"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addTwoTeamB"
+                android:src="@drawable/addtwo"
+                android:layout_marginBottom="@dimen/dpButtonBetweenButtons"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/add_one_points_team_b"
+                android:layout_width="@dimen/buttonDimension"
+                android:layout_height="@dimen/buttonDimension"
+                android:layout_margin="8dp"
+                android:onClick="addOneTeamB"
+                android:src="@drawable/addone"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="resetScores"
+        android:text="@string/reset_button"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="7sp"
+        android:id="@+id/social_media_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/reset_button">
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/icon_gplus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/googleplus" />
+
+        <ImageView
+            android:id="@+id/icon_youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/youtube" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>
