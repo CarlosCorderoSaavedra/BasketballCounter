@@ -11,12 +11,69 @@
     tools:context="com.example.android.courtcounter.MainActivity">
 
 
+
+
+     <ImageView
+         android:id="@+id/image_top"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@drawable/basketballimage"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="7sp"
+        android:id="@+id/social_media_layout"
+        android:layout_alignBottom="@id/image_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/reset_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/icon_gplus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/googleplus" />
+
+        <ImageView
+            android:id="@+id/icon_youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/youtube" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:background="@color/backgroundApp"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:id="@+id/:linear_layout_scores"
@@ -155,53 +212,10 @@
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:onClick="resetScores"
         android:text="@string/reset_button"
-        android:layout_centerHorizontal="true"
-        />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal"
-        android:padding="7sp"
-        android:id="@+id/social_media_layout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/reset_button">
-
-        <ImageView
-            android:id="@+id/icon_fb"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/facebook" />
-
-        <ImageView
-            android:id="@+id/icon_twitter"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/twitter" />
-
-        <ImageView
-            android:id="@+id/icon_gplus"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/googleplus" />
-
-        <ImageView
-            android:id="@+id/icon_youtube"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/youtube" />
-
-    </LinearLayout>
+        android:layout_alignBottom="@id/activity_main"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 
 </ScrollView>
