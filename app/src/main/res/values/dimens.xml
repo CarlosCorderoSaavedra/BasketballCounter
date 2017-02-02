@@ -13,6 +13,8 @@
     <dimen name="dpMarginRight">24dp</dimen>
     <dimen name="dpMarginBotton">32dp</dimen>
     <dimen name="buttonDimension">80dp</dimen>
+    <dimen name="defaultMargin">8dp</dimen>
+    <dimen name="editPadding">4dp</dimen>
     <!-- Teams names style-->
     <dimen name="teamNameTextSize">25sp</dimen>
 

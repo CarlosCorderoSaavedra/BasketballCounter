@@ -16,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         displayForTeamA(0);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_main);
-
-
-
-
     }
 
     public void disableKeyboard(){
