@@ -10,17 +10,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.courtcounter.MainActivity">
 
-
-
-
-     <ImageView
-         android:id="@+id/image_top"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:src="@drawable/basketballimage"/>
-
-    
-
     <LinearLayout
         android:background="@color/backgroundApp"
         android:id="@+id/activity_main"
