@@ -19,52 +19,7 @@
          android:layout_height="match_parent"
          android:src="@drawable/basketballimage"/>
 
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal"
-        android:padding="7sp"
-        android:id="@+id/social_media_layout"
-        android:layout_alignBottom="@id/image_top"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/reset_button"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <ImageView
-            android:id="@+id/icon_fb"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/facebook" />
-
-        <ImageView
-            android:id="@+id/icon_twitter"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/twitter" />
-
-        <ImageView
-            android:id="@+id/icon_gplus"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/googleplus" />
-
-        <ImageView
-            android:id="@+id/icon_youtube"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/youtube" />
-
-    </LinearLayout>
+    
 
     <LinearLayout
         android:background="@color/backgroundApp"
